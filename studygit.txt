@@ -35,5 +35,9 @@
 > git checkout -- readme.txt
 
 
+7、将分支推送到服务器
+> git push origin master
+
+
 
 
