@@ -19,6 +19,21 @@
 > git add file2.txt file3.txt
 > git commit -m "add 3 files"
 
+5、撤销修改
+如果在准备提交前发现错误，可以丢弃工作去的修改：
+> git checkout -- readme.txt       （注意readme.txt前面有空格）
+
+把readme.txt文件在工作去的修改全部撤销，有两种情况：
+一种是readme.txt自修改后还没有被放到暂存取（没有git add readme.txt），这时撤销修改就回到和版本库一模一样的状态
+一种是readme.txt自修改后已经添加到暂存取（已经git add readme.txt）,这时撤销修改就回到和暂存取一模一样的状态
+
+6、将暂存取的修改撤销
+> git reset HEAD readme.txt
+
+如果将错误的内容添加到暂存取了，还没有提交，现在想恢复，可以执行下面语句
+> git reset HEAD readme.txt
+> git checkout -- readme.txt
+
 
 
 
